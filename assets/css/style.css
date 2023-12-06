@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif ;
+}
+:root{
+    --color1: #081B26;
+    --color2: #284659;
+    --color3: #6085A6;
+    --color4: #DCE6F2;
+    --color5: #B4C4D9;
+    --color6: #D95E32;
+
+}
+body{
+    background-color: var(--color1);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 600px;
+    height: 95%;
+    border-radius: 15px;
+    background-color: var(--color2);
+}
+#content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#text h1{
+    width: 100%;
+    margin: 0 100px;
+    padding: 15px 0px 5px;
+    text-align: center;
+    border-bottom: 2px solid var(--color6);
+    color: var(--color5);
+    font-size: 3rem;
+}
+#text #msg{
+    color: var(--color3);
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+#num-drawn{
+    font-size: 7rem;
+    font-weight: 600;
+    color: var(--color4);
+}
+#buttons{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+#buttons button{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color5);
+    cursor: pointer;
+    color: var(--color1);
+    font-size: 1rem;
+    font-weight: bold;
+    width: 80%;
+    padding: 5px 0px;
+}
+#buttons button:hover{
+    background-color: #D95E32;
+    color: var(--color4);
+}
+#last-drawn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+}
+#last-drawn span{
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color6);
+    border-bottom: 2px solid var(--color3);
+}
+/*REFERENTE AOS NÚMEROS*/
+
+#content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+}
+#table{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 20px;
+}
+.letter{
+    color: var(--color6);  
+    font-size: 1.5rem;
+    padding-right: 20px;
+}
+.tr{
+    width: 100%;
+    display: flex;
+}
+.ball{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color4);
+    border-radius: 100%;
+
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
+}
+.bola_chamada{
+    background-color: #D95E32;
+}
